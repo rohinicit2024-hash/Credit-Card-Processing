@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Administrator Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>
+            Credit Card Processing System
+        </h1>
+
+        <h2>
+            Administrator Dashboard
+        </h2>
+
+        <p class="admin-welcome">
+            Welcome, Administrator
+        </p>
+
+
+        <!-- SUMMARY -->
+
+        <div class="summary-box">
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Total Members
+                </h3>
+
+                <p id="totalMembers">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Logged-in Members
+                </h3>
+
+                <p id="loggedInMembers">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <h3>
+                    Total Transactions
+                </h3>
+
+                <p id="totalTransactions">
+                    0
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MEMBER LIST -->
+
+        <div class="section">
+
+            <h3>
+                ● Member List
+            </h3>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Member Name
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="memberTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <button
+            class="logout"
+            onclick="adminLogout()"
+        >
+            Administrator Logout
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        checkAdmin();
+        loadAdminDashboard();
+
+    </script>
+
+</body>
+
+</html>

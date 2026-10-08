@@ -1,0 +1,374 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #f2f6fa;
+
+    margin: 0;
+
+    padding: 30px;
+}
+
+
+/* =========================================
+   LOGIN BOX
+========================================= */
+
+.login-box {
+
+    width: 400px;
+
+    margin: 80px auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+/* =========================================
+   DASHBOARD
+========================================= */
+
+.dashboard {
+
+    width: 800px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1 {
+
+    color: #1769aa;
+
+    text-align: center;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+
+    margin: 20px 0;
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+input {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+label {
+
+    display: block;
+
+    margin-top: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 10px;
+
+    background: #1769aa;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background: #0d4f82;
+}
+
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.logout {
+
+    background: #d9534f;
+}
+
+.logout:hover {
+
+    background: #c9302c;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.back-button {
+
+    background: #555;
+}
+
+.back-button:hover {
+
+    background: #333;
+}
+
+
+/* =========================================
+   FORGOT LINKS
+========================================= */
+
+.forgot-links {
+
+    margin-top: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.forgot-links a {
+
+    color: #1769aa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.forgot-links a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   ADMIN LINK
+========================================= */
+
+.admin-link {
+
+    margin-top: 25px;
+}
+
+.admin-link a {
+
+    color: #555;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    text-align: center;
+}
+
+th {
+
+    background: #1769aa;
+
+    color: white;
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.summary-box {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin: 20px 0;
+}
+
+.summary-card {
+
+    flex: 1;
+
+    padding: 20px;
+
+    background: #f2f6fa;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.summary-card p {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #1769aa;
+}
+
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.success {
+
+    color: green;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   PASSWORD
+========================================= */
+
+.password-note {
+
+    font-size: 14px;
+
+    color: #555;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   OTP
+========================================= */
+
+.otp-box {
+
+    padding: 15px;
+
+    margin: 15px 0;
+
+    background: #f2f6fa;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    font-size: 18px;
+}
+
+#displayOTP,
+#loginOTP {
+
+    color: #1769aa;
+
+    font-size: 24px;
+
+    margin-left: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   ADMIN
+========================================= */
+
+.admin-welcome {
+
+    text-align: center;
+
+    font-weight: bold;
+
+    color: #555;
+}

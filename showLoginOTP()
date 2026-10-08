@@ -1,0 +1,41 @@
+function showLoginOTP() {
+
+    let otp =
+        localStorage.getItem("loginOTP");
+
+
+    if (!otp) {
+
+        window.location.href =
+            "index.html";
+
+        return;
+    }
+
+
+    let mobileNumber =
+        localStorage.getItem("mobileNumber");
+
+
+    /* Show last 4 digits */
+
+    if (mobileNumber) {
+
+        let lastFour =
+            mobileNumber.slice(-4);
+
+        document.getElementById(
+            "mobileLastDigits"
+        ).textContent =
+            lastFour;
+
+    }
+
+
+    /* Show demo OTP */
+
+    document.getElementById(
+        "loginOTP"
+    ).textContent =
+        otp;
+}

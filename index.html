@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Credit Card Processing System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h1>
+            Credit Card Processing System
+        </h1>
+
+        <h2>
+            Welcome
+        </h2>
+
+        <p>
+            Secure and Simple Credit Card Transaction Management
+        </p>
+
+
+        <h3>
+            Login
+        </h3>
+
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter Username"
+        >
+
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+        >
+
+
+        <button onclick="login()">
+            Login
+        </button>
+
+
+        <p>
+            <a href="#" onclick="forgotUsername()">
+                Forgot Username?
+            </a>
+        </p>
+
+
+        <p>
+            <a href="#" onclick="forgotPassword()">
+                Forgot Password?
+            </a>
+        </p>
+
+
+        <hr>
+
+
+        <p>
+            Administrator?
+        </p>
+
+
+        <button
+            onclick="window.location.href='admin-login.html'">
+            Admin Login
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

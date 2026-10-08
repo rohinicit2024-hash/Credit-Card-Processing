@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Payment OTP Verification</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>
+            Credit Card Processing System
+        </h1>
+
+        <h2>
+            Payment OTP Verification
+        </h2>
+
+        <div class="section">
+
+            <h3>
+                ● Security Verification
+            </h3>
+
+            <p>
+                Payment password verified successfully.
+            </p>
+
+            <p>
+                Enter the OTP to complete your payment.
+            </p>
+
+
+            <div class="otp-box">
+
+                <b>Demo OTP:</b>
+
+                <span id="displayOTP"></span>
+
+            </div>
+
+
+            <input
+                type="text"
+                id="otp"
+                placeholder="Enter 6-digit OTP"
+                maxlength="6"
+            >
+
+
+            <button onclick="verifyOTP()">
+                Verify OTP
+            </button>
+
+        </div>
+
+
+        <button
+            class="back-button"
+            onclick="window.location.href='payment.html'"
+        >
+            Back to Payment
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        checkUser();
+        showOTP();
+
+    </script>
+
+</body>
+
+</html>

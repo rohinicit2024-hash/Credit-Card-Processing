@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>User Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>
+            Credit Card Processing System
+        </h1>
+
+        <h2>
+            User Dashboard
+        </h2>
+
+        <!-- CUSTOMER DETAILS -->
+
+        <div class="section">
+
+            <h3>
+                ● Customer Details
+            </h3>
+
+            <p>
+                <b>Customer Name:</b>
+                <span id="customerName"></span>
+            </p>
+
+            <p>
+                <b>Card Number:</b>
+                **** **** **** 4582
+            </p>
+
+            <p>
+                <b>Card Status:</b>
+
+                <span class="success">
+                    Active
+                </span>
+
+            </p>
+
+            <p>
+                <b>Available Credit:</b>
+                ₹75,000
+            </p>
+
+        </div>
+
+
+        <!-- SPENDING SUMMARY -->
+
+        <div class="section">
+
+            <h3>
+                ● Spending Summary
+            </h3>
+
+            <div class="summary-box">
+
+                <div class="summary-card">
+
+                    <b>Total Spent</b>
+
+                    <p id="totalSpent">
+                        ₹0
+                    </p>
+
+                </div>
+
+                <div class="summary-card">
+
+                    <b>Transactions</b>
+
+                    <p id="transactionCount">
+                        0
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PAYMENT -->
+
+        <div class="section">
+
+            <h3>
+                ● Process Payment
+            </h3>
+
+            <p>
+                Make a secure credit card payment.
+            </p>
+
+            <button
+                onclick="window.location.href='payment.html'"
+            >
+                Process Payment
+            </button>
+
+        </div>
+
+
+        <!-- TRANSACTION HISTORY -->
+
+        <div class="section">
+
+            <h3>
+                ● Transaction History
+            </h3>
+
+            <p>
+                View your previous transactions.
+            </p>
+
+            <button
+                onclick="window.location.href='transactions.html'"
+            >
+                View Transaction History
+            </button>
+
+        </div>
+
+
+        <!-- SECURITY -->
+
+        <div class="section">
+
+            <h3>
+                ● Security Center
+            </h3>
+
+            <p>
+                Check your card security and account activity.
+            </p>
+
+            <button
+                onclick="window.location.href='security.html'"
+            >
+                Open Security Center
+            </button>
+
+        </div>
+
+
+        <!-- LOGOUT -->
+
+        <button
+            class="logout"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        checkUser();
+        loadDashboard();
+
+    </script>
+
+</body>
+
+</html>

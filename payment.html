@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Process Payment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="checkUser();">
+
+    <div class="dashboard">
+
+        <h1>
+            Credit Card Processing System
+        </h1>
+
+        <h2>
+            Process Payment
+        </h2>
+
+
+        <div class="payment-box">
+
+            <h3>
+                ● Payment Details
+            </h3>
+
+
+            <label>
+                Card Holder Name
+            </label>
+
+            <input
+                type="text"
+                id="cardHolder"
+                placeholder="Enter Card Holder Name"
+            >
+
+
+            <label>
+                Card Number
+            </label>
+
+            <input
+                type="text"
+                id="cardNumber"
+                placeholder="Enter 16-digit Card Number"
+                maxlength="16"
+            >
+
+
+            <label>
+                Payment Amount
+            </label>
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Enter Amount"
+                min="1"
+            >
+
+
+            <label>
+                Payment Password
+            </label>
+
+            <input
+                type="password"
+                id="paymentPassword"
+                placeholder="Create or Enter Payment Password"
+            >
+
+
+            <button onclick="continuePayment()">
+                Continue Payment
+            </button>
+
+        </div>
+
+
+        <button
+            onclick="window.location.href='dashboard.html'">
+
+            Back to Dashboard
+
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
